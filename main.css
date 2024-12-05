@@ -1,0 +1,257 @@
+body {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    /* background: linear-gradient(225deg, #330071 0%,#af7df0 100% ); */
+    background: #1F1926;
+    /* background: white; */
+    color: white;
+    scroll-behavior: smooth;
+    padding-bottom: 8000px;
+    /* background-image: url('/img/rm222-mind-22.jpg');
+    background-repeat: no-repeat;
+    background-size: cover ; */
+    scroll-snap-type: mandatory ;
+
+}
+
+
+header { 
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    
+}
+
+.header-btn {
+    padding: 7px 20px 7px 20px;
+    /* border-radius: 30px;  */
+    border: none;
+    font-size: 16px;
+    background-color: transparent;
+    color: white;
+    transition: 0.1s;
+    font-weight: 600;
+    position: relative;
+}
+
+/* .main-img-1 {
+    z-index: 40;
+    position: absolute;
+} */
+
+.header-btn:hover::after {
+    content: '';
+    background: linear-gradient(to right,rgb(89, 0, 255) ,rgb(255, 255, 255));;
+    border-radius: 40vw;
+    position: absolute;
+    top: 118%;
+    left: 0px;
+    width: 100%;
+    height: 3px;
+}
+
+.header-btn-con {
+    margin-right: 20px;
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    border: 2px solid white;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.hamberger-menu {
+    position: absolute;
+    right: 30px;
+    font-weight: 900;
+    transform: rotate(90deg);
+    font-size: 30px;
+}
+
+/*--------- Details --------- */
+
+.details {
+    display: flex;
+    /* flex-direction: row-reverse; */
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: lightcoral; */
+    height: 70vh;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+}
+
+.details-1 {
+    flex-direction: row-reverse;
+    height: clamp(60vh,70vh,80vh);
+    background: #6500d9;
+    margin-top: 5vw;
+    margin-right: 0px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgb(45, 45, 45);
+
+}
+
+.details-2 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(51, 51, 51);
+    height: clamp(60vh,70vh,80vh);
+}
+.details-2 p {
+    font-size: 4vw;
+}
+.details-2 li {
+    list-style-type: none ;
+    background-color: red;
+    margin-bottom: 5px;
+    width: 25vw;
+    height: 50px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+}
+
+
+.details-con-1 {
+    margin-right: 0px;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.details-1 .details-p1 {
+    margin: 0vw 0vw 3vw 0vw;
+    font-size: 3vw;
+}
+.details-1 .details-p2 {
+    margin: 0px;
+    font-size: 2vw;
+}
+.details-1 .details-p3 {
+    margin: 10px 0px 0px 0px;
+    font-size: 2vw;
+    display: block;
+    color: rgb(178, 178, 178);
+
+}
+.main-img {
+    background-color: white;
+    width: 25vw;
+    height: auto;
+    border-radius: 50%;
+    margin-left: 8vw;
+}
+
+.second-img {
+    width: 30vw;
+    height: auto;
+
+}
+
+.details-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5vw;
+    margin-right: 7vw;
+}
+.contact {
+    display: flex;
+    margin-left: 80%;
+    margin-right: 5%;
+    align-items: center;
+}
+.contact div {
+    margin-right: 20px;
+    font-size: 2vw;
+}
+
+/* Did not used child Classses */
+
+.details-p1 {
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+.details-p2 {
+    font-size: 2vw;
+    line-height: 3vw;
+    margin-right: 4vw;
+    width: 25.5vw;
+    color: rgb(178, 178, 178);
+}
+.details-p3 {
+    display: none;
+}
+
+
+
+/* Extra small devices (phones) */
+@media only screen and (max-width: 600px) {    
+    body {
+        background-color: gold;
+        /* display: none; */
+    }
+    .header-btn-con {
+        display: none;
+    }
+}
+
+/* small devices (potrainght tablets large phones) */
+@media only screen and (min-width: 600px) {
+    body {
+        background-color: pink;
+
+    }
+    .header-btn-con {
+        display: none;
+    }
+}
+
+/* Medium devices (landscape tablets) */
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: #1F1926;
+    }
+    .header-btn-con {
+        display: flex;
+    }
+    .hamberger-menu {
+        display: none;
+    }
+}
+
+/* large devices (laptops/desktops) */
+@media only screen and (min-width: 992px) {
+    body {
+        background-color: rgb(126, 3, 3);
+    }
+    .header-btn-con {
+        display: flex;
+    }
+    .hamberger-menu {
+        display: none;
+    }
+}
+
+/* Extra large devices (large laptops and desktops) */
+@media only screen and (min-width: 1200px) {
+    body {
+        background: linear-gradient(90deg,rgb(91, 227, 245),rgb(82, 46, 242));
+    }
+    .header-btn-con {
+        display: flex;
+    }
+    .hamberger-menu {
+        display: none;
+    }
+} 
